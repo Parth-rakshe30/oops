@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+class Father
+{
+    public:
+        void FathersProperty()
+        {
+            cout<<"Father has a house in pune \n";
+        }
+};
+
+class Mother
+{
+   public: 
+        void MothersProperty()
+        {
+            cout<<"Mother has a house in shirdi \n";
+        }
+};
+
+class Child : public Father,public Mother
+{
+    public:
+        void ChildsProperty()
+        {
+            cout<<"Child can live any where in Maharashtra\n";
+        }
+    
+};
+
+int main() 
+{
+    Father f;
+    Mother m; 
+    Child c;
+    
+    f.FathersProperty();
+    m.MothersProperty();
+    c.ChildsProperty();
+    cout<<"=== code executed successfully ===";
+    return 0 ;
+}
