@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+class Person
+{
+    public:
+        void reality()
+        {
+            cout<<"I am a Living thing\n";
+        }
+};
+
+class Student : public Person
+{
+    public:
+        void learning()
+        {
+            cout<<"I am learning my live lessons\n";
+        }
+};
+
+class Employee : public Person
+{
+    public:
+        void earning()
+        {
+            cout<<"I am earning for my family\n";
+        }
+    
+};
+
+int main() 
+{
+    Person p;
+    Student s;
+    Employee e;
+
+    p.reality();
+    s.learning(); 
+    e.earning();
+    cout<<"=== Code Execuated Successfully===\n";
+    return 0;
+}
